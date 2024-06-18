@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f0f4f5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navigation styles */
+nav {
+  background-color: #333;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+.navigation {
+  list-style-type: none;
+  display: flex;
+}
+
+.navigation li {
+  margin-right: 1rem;
+}
+
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navigation li a:hover {
+  color: #ddd;
+}
+
+.burger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+/* Hero section styles */
+.hero {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bio {
+  max-width: 600px;
+}
+
+.bio-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.bio-text {
+  font-size: 1.1rem;
+}
+
+/* More about section */
+.more-about {
+  background-color: #fff;
+  padding: 4rem 2rem;
+}
+
+.more-about h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.more-about p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Skills section */
+.skills {
+  background-color: #f0f0f0;
+  padding: 4rem 2rem;
+}
+
+.skill-header {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.skills-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-card {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+}
+
+/* Projects section */
+.projects {
+  padding: 2rem 2rem;
+}
+
+.projects-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: calc(50% - 1rem);
+}
+
+.project-pic {
+  width: 80%; /* Reduced width to make the image smaller */
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: block; /* This will ensure the image is centered */
+  margin-left: auto; /* And this will center it horizontally */
+  margin-right: auto;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-details {
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* Contact section */
+.contact {
+  background-color: #fff;
+  padding: 4rem 2rem;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.contact-form-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.copy {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Social icons */
+.socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.socicon {
+  width: 40px;
+  height: auto;
+  margin: 0 0.5rem;
+}
+
+/* Scroll up button */
+.scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 40px;
+  height: auto;
 }
